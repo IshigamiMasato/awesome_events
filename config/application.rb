@@ -23,6 +23,12 @@ module AwesomeEvents
   class Application < Rails::Application
     # Initialize configuration defaults for originally generated Rails version.
     config.load_defaults 6.1
+    # Railsアプリケーション内の時間を日本時間に変更、DB登録時は自動的にUTCに変換される、ApplicationRecordを通すとUTCからJSTに自動変換される
+    config.time_zone = "Tokyo"
+    # v6.1からremoteがデフォルトでfalseになった
+    config.action_view.form_with_generates_remote_forms = true
+    # i18n化
+    config.i18n.default_locale = :ja
 
     # Configuration for the application, engines, and railties goes here.
     #
