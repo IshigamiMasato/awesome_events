@@ -1,5 +1,7 @@
 Rails.application.routes.draw do
-  resources :events
+  resources :events do
+    resources :tickets
+  end
   root "welcome#index"
   # 認証成功時に下期のURLにアクセスする
   get "/auth/:provider/callback" => "sessions#create"
