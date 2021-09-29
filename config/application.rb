@@ -29,6 +29,8 @@ module AwesomeEvents
     config.action_view.form_with_generates_remote_forms = true
     # i18n化
     config.i18n.default_locale = :ja
+    # 画像変換ツールにvipsを用いる
+    config.active_storage.variant_processor = :vips
 
     # Configuration for the application, engines, and railties goes here.
     #
