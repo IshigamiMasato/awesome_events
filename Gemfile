@@ -29,6 +29,8 @@ gem 'omniauth-github'
 gem 'omniauth-rails_csrf_protection'
 gem 'rails-i18n'
 gem 'active_storage_validations'
+gem 'kaminari'
+gem 'searchkick'
 
 # Reduces boot times through caching; required in config/boot.rb
 gem 'bootsnap', '>= 1.4.4', require: false
