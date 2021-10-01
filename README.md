@@ -16,6 +16,14 @@
 ## テストの実行方法
 ### システムテストの実行方法
 elasticsearchを起動します  
-`% elasticsearch`  
-システムテストを起動させます  
-`% bin/rails test:system`
+
+```
+% elasticsearch
+```
+
+
+システムテストを起動させます
+
+```
+% bin/rails test:system
+```
