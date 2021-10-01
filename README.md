@@ -1,24 +1,21 @@
-# README
+# awsome events
+これは、パーフェクトRuby on Rails第2版の第6章以降で作成されたサンプルアプリケーションです。
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+イベント情報を登録／編集したり、イベントに参加登録したりできます。
 
-Things you may want to cover:
+## 環境
+- Ruby 2.6.7
+- Rails 6.1.4.1
+- libvips
+- Elasticsearch
+    - Japanese(kuromoj) Analysis Plugin
 
-* Ruby version
+## テストツール
+- minitest
 
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+## テストの実行方法
+### システムテストの実行方法
+elasticsearchを起動します  
+`% elasticsearch`  
+システムテストを起動させます  
+`% bin/rails test:system`
